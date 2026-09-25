@@ -1,0 +1,24 @@
+[package]
+name = "kasa-rs"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.82"
+authors = ["Justin Woodring <jwoodrg@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/JustinWoodring/kasa-rs"
+homepage = "https://github.com/JustinWoodring/kasa-rs"
+readme = "README.md"
+description = "TP-Link Kasa smart home protocol: legacy XOR TCP, KLAP HTTP/AES (v1+v2), UDP discovery, and a bulb facade"
+keywords = ["kasa", "tplink", "smart-home", "iot", "bulb"]
+categories = ["hardware-support", "network-programming"]
+
+[dependencies]
+tokio = { version = "1", features = ["net", "time", "io-util", "macros"] }
+anyhow = "1"
+serde_json = "1"
+tracing = "0.1"
+aes = "0.9"
+sha1 = "0.11"
+sha2 = "0.11"
+md-5 = "0.11"
+rand = "0.9"
